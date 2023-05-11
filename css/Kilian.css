@@ -1,0 +1,46 @@
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.present .ecrit h2{
+    padding-bottom: 20px;
+}
+.carre{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 35px 0px 35px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carre audio{
+    padding-top: 20px;
+}
+.texte p, a{
+    font-family:'Times New Roman', Times, serif;
+}
+.taille{
+    width: 60%;
+}
+
+.quote{
+    display: flex;
+	margin:30px auto;
+	width: 65%;
+	border: 2px dotted #17202a;
+	background-color: #fcf3cf;
+	color:#17202a;
+}
+.quote .carre h3{
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 645px){
+    .quote{
+        width: 90%;
+    }
+}

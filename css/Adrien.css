@@ -1,0 +1,17 @@
+.carre{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 35px 0px 35px 0px;
+}
+.carre iframe{
+    padding-top: 20px;
+}
+.texte p, a{
+    font-family:fantasy;
+}
+.taille{
+    width: 60%;
+}

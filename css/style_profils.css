@@ -1,0 +1,114 @@
+.profils{
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.present{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.ecrit{
+    margin: 10px 20px;
+	padding: 20px 20px;
+	border: 2px dotted #17202a;
+	background-color: #fcf3cf;
+	color:#17202a;
+}
+.ecrit .titre{
+    text-decoration: underline;
+    font-size: 1.63rem;
+    font-weight: 600;
+    margin: 20px;
+    text-align: center;
+}
+.ecrit p{
+    letter-spacing: 1px;
+}
+.experience{
+    padding-left: 50px;
+    list-style-type: square;
+}
+.langues li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.present .ecran{
+    width: 80%;
+}
+
+.photo{
+    width: 10em;
+    border-radius: 50%;
+}
+
+progress{
+    width: 50%;
+    height: 10px;
+    border-radius: 6px;
+    background: #eee;
+    cursor: pointer;
+}
+span.nombre{
+    display: none;
+    font-size: 600;
+}
+.coordonne{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.icone{
+    width: 45px;
+    padding-right: 1.25rem;
+}
+.coordonne li{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 852px){
+    .present{
+        flex-wrap: wrap;
+    } 
+     .present .ecrit{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 645px){
+    .profils{
+        background-color: #fcf3cf;
+        padding: 0;
+        width: 100%;
+    }
+    .present{
+        width: 100%;
+    }
+    .profils .ecrit{
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
+    
+    .coordonne{
+        flex-direction: column;
+    }
+    .coordonne li img{
+        display: none;
+    }
+}
+@media screen and (max-width: 420px){
+    progress{
+        display: none;
+    }
+    span.nombre{
+    display: inline-block;
+    }
+}

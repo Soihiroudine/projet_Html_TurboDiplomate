@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+nav ul, ul.menu {
+	list-style-type: none;
+}
+.tabulation::before{
+	content: " ";
+	padding-left: 20px;
+}
+.citation{
+	font-style: italic;
+	font-weight: 600;
+	font-size: 0.88rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.motCles{
+	font-weight: 600;
+	color:#1d8348;
+}
+
+header{
+	background-color:#239b56;
+	padding: 10px;
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.headerImageBar{
+	display: none;
+	cursor: pointer;
+	width: 2rem;
+}
+header img{
+	width: 100px;
+}
+header h1{
+	border: 3px solid #17202a;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#acceuil{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+section nav{
+	width: 35%;
+	height: 100%;
+	background-color: #fcf3cf;
+	margin: 20px 30px;
+	border-radius: 10px;
+	border: 2px dotted  #17202a;
+}
+
+section nav ul li a{
+	color: #eee;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	background-color: #239b56;
+	border-radius: 6px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 20px;
+	
+}
+section nav ul #about{
+	background-color:#3498db;
+	font-weight: 600;
+	cursor: no-drop;
+	padding: 20px 35px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+section nav ul a:hover{
+	background-color: #18693a;
+}
+
+.presentation{
+	margin: 20px 30px;
+	width: 55%;
+	padding: 35px 20px;
+	border: 2px dotted #17202a;
+	background-color: #fcf3cf;
+	color:#17202a;
+}
+.partie{
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+}
+.partie h3{
+	padding-bottom: 10px;
+}
+.partie p{
+	letter-spacing: 1px;
+
+}
+.partie p::before{
+	content: " ";
+	padding-left: 20px;
+}
+.partie ul{
+	padding: 10px;
+}
+
+footer{
+	padding: 20px;
+	background-color:#17202a;
+	color: #eee;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.copyrights{
+    padding-top:20px;
+	padding-bottom: 20px;
+}
+.disclaimer{
+	border-top: 2px solid #eee;
+	padding-top: 10px;
+}
+
+@media screen and (max-width: 1194px){
+	.presentation{
+		width: 90%;
+	}
+}
+
+@media  screen and (max-width:652px){
+	main{
+		background-color: #fcf3cf;
+	}
+	section nav{
+		width: 90%;
+	}
+	.header{
+		display: none;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.headerImageBar{
+		display: flex;
+	}
+	.presentation{
+		border: none;
+		width: 100%;
+		margin: 5px;
+		padding: 0;
+	}
+	#acceuil nav{
+		border: none;
+	}
+	.partie p{
+	letter-spacing: 0px;
+}
+}
